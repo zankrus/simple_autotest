@@ -6,7 +6,7 @@ from python_locators.python_locators import PythonPageLocators
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-PYTHON_URL = 'http://www.ya.ru'
+YA_RU_URL = 'http://www.ya.ru'
 
 
 class PythonPage:
@@ -22,7 +22,7 @@ class PythonPage:
         driver.find_element(*PythonPageLocators.SEARCH_BUTTON).click()
 
     def open_page(self):
-        self.driver.get(PYTHON_URL)
+        self.driver.get(YA_RU_URL)
 
     def quit_driver(self):
         self.driver.quit()
